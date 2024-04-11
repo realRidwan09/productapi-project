@@ -8,12 +8,12 @@ function App() {
   
   return (
     <>
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
         <Productlist/>
-        {/* <Routes>
+        <Routes>
           <Route path="/Productpage" element={<Productpage/>}/>
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </>
   )
 }
