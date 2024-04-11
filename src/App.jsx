@@ -1,15 +1,15 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
-import Productlist from './component/productlist/Productlist'
-import Productpage from './component/productpage/Productpage'
-import Productcard from './component/productcard/Productcard'
+import Productlist from './component/Productlist'
+import Productpage from './component/Productpage'
+import Productcard from './component/Productcard'
 
 function App() {
   
   return (
     <>
       {/* <BrowserRouter> */}
-        <Productlist />
+        <Productlist/>
         {/* <Routes>
           <Route path="/Productpage" element={<Productpage/>}/>
         </Routes>

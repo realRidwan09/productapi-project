@@ -6,10 +6,10 @@ const Productcard = (props)=>{
         <>
             <div className="parentWrap">
                 <div id="productDetails">
-                    <h3 id="productName">{props.name}</h3>
+                    <h3 id="productName">{props.title}</h3>
                     <h4 id="productPrice">{props.price}</h4>
                     <p id="productDescription">{props.description}</p>
-                    <p id="productCatgories">{props.categories}</p>
+                    <p id="productCatgories">{props.category}</p>
                 </div>
                 <img id="productImage" src={props.image} alt="productImage" />
 

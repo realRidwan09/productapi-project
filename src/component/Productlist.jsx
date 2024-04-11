@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import Productcard from '../productcard/Productcard'
+import Productcard from './Productcard'
 
 const Productlist = ()=>{
     const [list, setList] = useState([])
@@ -7,9 +7,8 @@ const Productlist = ()=>{
 
     useEffect(()=>{
         fetch()
-    },[]
+    }, [])
 
-)
     const fetch = async()=>{
         setLoad(true)
 
@@ -37,8 +36,8 @@ const Productlist = ()=>{
                          list.map((info)=>{
 
                              return (
-                                     <Productcard key={info.id} name ={info.name} price ={info.price} description ={info.description} 
-                                     categories ={info.categories} image ={info.image} />
+                                     <Productcard key={info.id} title ={info.title} price ={info.price} description ={info.description} 
+                                     category ={info.category} image ={info.image} />
                                  )
                          })
                          }
