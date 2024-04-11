@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {Link} from 'react-router-dom'
 
 const Productcard = (props)=>{
@@ -13,10 +13,12 @@ const Productcard = (props)=>{
                 </div>
                 <img id="productImage" src={props.image} alt="productImage" />
 
-                <Link to ={'/productPage'}>
+                {/* <Link to ={'/productPage'}>
                     <button>Click</button>
-                </Link>
+                </Link> */}
             </div>
         </>
     )
 }
+
+export default Productcard
